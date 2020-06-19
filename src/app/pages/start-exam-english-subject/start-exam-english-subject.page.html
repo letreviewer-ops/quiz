@@ -1,0 +1,57 @@
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <div class="toolbar">
+      <span class="subject">
+        English
+      </span>
+      <span class="counter-answered-item">
+        <span class="back">
+          <i class="fa fa-toggle-left"></i>
+        </span>
+         1/20
+         <span class="back" 
+          routerLink="/score-result">
+          <i class="fa fa-toggle-right"></i>
+        </span>
+      </span>
+      <span class="timer">
+        00:00
+      </span>
+    </div>
+
+    <div class="selection">
+      <div class="question"
+      >
+        {{question}}
+      </div>
+
+      <ion-button
+        class="choices-selection-box"
+        (click)="submitAnswer()"
+        >
+          {{choiceA}}
+      </ion-button>
+
+      <ion-button
+        class="choices-selection-box"
+        (click)="submitAnswer()"
+        >
+          {{choiceB}}
+      </ion-button>
+
+      <ion-button
+        class="choices-selection-box"
+        (click)="submitAnswer()"
+        >
+          {{choiceC}}
+      </ion-button>
+
+      <ion-button
+        class="choices-selection-box"
+        (click)="submitAnswer()"
+        >
+          {{choiceD}}
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,51 @@
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <div class="toolbar">
+      <div class="options">
+        <span class="left">
+          <span class="back" 
+            routerLink="/admin-menu">
+            <i class="fa fa-toggle-left"></i>
+          </span>
+        </span>
+        <span class="title">EXAMINEE LISTS</span>
+        <span class="right">
+          <span class="add" 
+            routerLink="/add-examinee">
+            <i class="fa fa-user-plus"></i>
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <div class="list-examinees-table">
+      <div class="header">
+          <span class="number">#</span>
+          <span class="eid">Examinee ID</span>
+          <span class="action">Action</span>
+      </div>
+      <div class="row" *ngFor="let examinee of examinees">
+        <span class="number">
+          {{examinee.id}}
+        </span>
+        <span class="eid">
+          {{examinee.examinee_id}}
+        </span>
+        <span class="action">
+          <span class="read"
+            (click)="detailsExaminee(examinee.id)">
+            <i class="fa fa-eye"></i>
+          </span>
+          <span class="update"
+            (click)="updateExaminee(examinee.id)">
+            <i class="fa fa-pencil-square"></i>
+          </span>
+          <span class="delete"
+            (click)="deleteExaminee(examinee.id)">
+            <i class="fa fa-trash"></i>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+</ion-content>

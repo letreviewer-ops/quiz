@@ -1,0 +1,28 @@
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <div class="toolbar">
+      <div class="options">
+        <span class="left">
+          <span class="back" 
+            routerLink="/examinee-list">
+            <i class="fa fa-toggle-left"></i>
+          </span>
+        </span>
+        <span class="title">DETAILS</span>
+      </div>
+    </div>
+
+    <ion-img class="logo" src="../assets/logo.jpg"></ion-img>
+
+    <div class="instructions-content">
+      <ul>
+        <li>Examinee ID : <strong>{{examinee_id}}</strong></li>
+        <li>PIN : <strong>{{examinee_pin}}</strong></li>
+        <li>Email : <strong>{{contact_email}}</strong></li>
+        <li>Fullname : <strong>{{fullname}}</strong></li>
+        <li>Gender : <strong>{{gender}}</strong></li>
+        <li>Date of Birth : <strong>{{date_birth}}</strong></li>
+      </ul>
+  </div>
+  </div>
+</ion-content>

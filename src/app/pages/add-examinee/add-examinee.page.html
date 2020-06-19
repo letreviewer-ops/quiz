@@ -1,0 +1,77 @@
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-img class="logo" src="../assets/logo.jpg"></ion-img>
+    <span class="title">Add Examinee Account</span>
+    <div class="add-form">
+      <ion-input 
+        class="input-box examinee-id"
+        placeholder="Examinee ID e.g. 2020030001"
+        type="decimal"
+        [(ngModel)]="examinee_id"
+      ></ion-input>
+
+      <ion-input 
+        class="input-box examinee-pin"
+        placeholder="Pin"
+        type="decimal"
+        [(ngModel)]="examinee_pin"
+      ></ion-input>
+
+      <ion-input 
+        class="input-box contact-email"
+        placeholder="Contact Email"
+        type="email"
+        [(ngModel)]="contact_email"
+      ></ion-input>
+
+      <ion-input
+        class="input-box fullname"
+        placeholder="Full Name"
+        type="text"
+        [(ngModel)]="fullname"
+      ></ion-input>
+
+      <div class="two-col">
+        <ion-select 
+          interface="popover"
+          class="input-box gender"
+          placeholder="Gender"
+          [(ngModel)]="gender">
+          <ion-select-option 
+            value="Male">Male</ion-select-option>
+          <ion-select-option 
+            value="Female">Female</ion-select-option>
+        </ion-select>
+
+        <ion-datetime 
+          class="input-box birthdate"
+          placeholder="Date of Birth"
+          displayFormat="YYYY/MM/DD"
+          min="1970-01-01"
+          max="2100-12-31"
+          [(ngModel)]="date_birth"  
+        ></ion-datetime>
+      </div>
+    
+      <div class="two-col">
+        <ion-button 
+          [disabled]="disabledButton"
+          class="let-btn-sm cancel"
+          routerLink="/examinee-list"
+          >
+          <i class="fa fa-close"></i>
+          Cancel
+        </ion-button>
+
+        <ion-button 
+          (click)="submitNewExaminee()"
+          [disabled]="disabledButton"
+          class="let-btn-sm submit"
+          >
+          <i class="fa fa-paper-plane"></i>
+          Submit
+        </ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

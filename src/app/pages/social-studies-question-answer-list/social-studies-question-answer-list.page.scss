@@ -1,0 +1,71 @@
+ion-content{
+    --ion-background-color:#3c005a;
+}
+
+.toolbar{
+    display: block;
+    height: 40px;
+    background: #5c008a;
+    color: #ffffff;
+    padding: 10px 5px;
+    margin: 20px 0;
+    .options{
+        .left{
+            float: left;
+            .back{
+                display: inline-block;
+                margin: -2px 20px 0 20px;
+                font-size: 20px;
+            }
+        }
+        .title{
+            position: relative;
+            text-align: center;
+            margin: 0 auto 0 3%;
+        }
+        .right{
+            float: right;
+            .add{
+                display: inline-block;
+                margin: 2px 20px 0 20px;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+.list-questions-table{
+    margin: 20px;
+    border: 1px solid #ffffff;
+    border-bottom: none;
+    color: #ffffff;
+    text-align: center;
+    .header{
+        font-size: 15px;
+        border-bottom: 1px solid #ffffff;
+    }
+    .row{
+        font-size: 12px;
+        border-bottom: 1px solid #ffffff;
+    }
+    .number {
+        display: inline-block;
+        width: 15%;
+        border-right: 1px solid #ffffff;
+        padding: 2% 0;
+    }
+    .qid{
+        display: inline-block;
+        width: 50%;
+        border-right: 1px solid #ffffff;
+        padding: 2% 0;
+    }
+    .action{
+        display: inline-block;
+        width: 35%;
+        .read, .edit, .delete{
+            margin: 0 8px;
+            font-size: 15px;
+        }
+    }
+}

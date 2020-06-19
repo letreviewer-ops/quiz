@@ -1,0 +1,57 @@
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <div class="toolbar">
+      <div class="options">
+        <span class="left">
+          <span class="back" 
+            routerLink="/examinee-menu">
+            <i class="fa fa-toggle-left"></i>
+          </span>
+        </span>
+        <span class="title">Select a Subject</span>
+      </div>
+    </div>
+
+    <div class="selection">
+      <ion-button
+        class="let-btn-sm start-exam-btn"
+        (click)="englishSubject()"
+        [disabled]="disabledButton"
+        >
+          English
+      </ion-button>
+
+      <ion-button
+        class="let-btn-sm start-exam-btn"
+        (click)="filipinoSubject()"
+        [disabled]="disabledButton"
+        >
+          Filipino
+      </ion-button>
+
+      <ion-button
+        class="let-btn-sm start-exam-btn"
+        (click)="mathematicsSubject()"
+        [disabled]="disabledButton"
+        >
+          Mathematics
+      </ion-button>
+
+      <ion-button
+        class="let-btn-sm start-exam-btn"
+        (click)="scienceSubject()"
+        [disabled]="disabledButton"
+        >
+          Science
+      </ion-button>
+
+      <ion-button
+        class="let-btn-sm start-exam-btn"
+        (click)="socialStudiesSubject()"
+        [disabled]="disabledButton"
+        >
+          Social Studies
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

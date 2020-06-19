@@ -1,0 +1,38 @@
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <div class="toolbar">
+      <div class="options">
+        <span class="left">
+          <span class="info" 
+            routerLink="/about">
+            <i class="fa fa-globe"></i>
+          </span>
+          <span class="instructions" 
+            routerLink="/instructions">
+            <i class="fa fa-info-circle"></i>
+          </span>
+        </span>
+        <span class="right">
+          <span class="exit" 
+            (click)="exit()">
+            <i class="fa fa-close"></i>
+          </span>
+        </span>
+      </div>
+    </div>
+    <ion-img class="logo" src="../assets/logo.jpg"></ion-img>
+    <ion-button 
+      class="let-btn-lg"
+      routerLink="/admin-login"
+    >
+      <i class="fa fa-id-badge"></i>
+      Admin
+    </ion-button>
+    <ion-button 
+      class="let-btn-lg"
+      routerLink="/examinee-login"
+    ><i class="fa fa-vcard"></i>
+      Examinee
+    </ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,62 @@
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-img class="logo" src="../assets/logo.jpg"></ion-img>
+    <span class="title">Update English Question</span>
+    <div class="add-form">
+      <ion-textarea
+        class="text-area question"
+        placeholder="Question"
+        type="text"
+        [(ngModel)]="question"
+      ></ion-textarea>
+
+      <ion-input 
+        class="input-box correct-answer"
+        placeholder="Correct Answer"
+        type="text"
+        [(ngModel)]="correct_answer"
+      ></ion-input>
+
+      <ion-input 
+        class="input-box choice1"
+        placeholder="Choice 1"
+        type="text"
+        [(ngModel)]="choice1"
+      ></ion-input>
+
+      <ion-input
+        class="input-box choice2"
+        placeholder="Choice 2"
+        type="text"
+        [(ngModel)]="choice2"
+      ></ion-input>
+
+      <ion-input
+        class="input-box choice3"
+        placeholder="Choice 3"
+        type="text"
+        [(ngModel)]="choice3"
+      ></ion-input>
+    
+      <div class="two-col">
+        <ion-button 
+          [disabled]="disabledButton"
+          class="let-btn-sm cancel"
+          routerLink="/english-question-answer-list"
+          >
+          <i class="fa fa-close"></i>
+          Cancel
+        </ion-button>
+
+        <ion-button 
+          (click)="updateEnglishQuestion()"
+          [disabled]="disabledButton"
+          class="let-btn-sm update"
+          >
+          <i class="fa fa-paper-plane"></i>
+          Update
+        </ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

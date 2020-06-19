@@ -1,0 +1,88 @@
+ion-content{
+    --ion-background-color:#3c005a;
+}
+
+.toolbar{
+    display: block;
+    height: 40px;
+    background: #5c008a;
+    color: #ffffff;
+    padding: 10px 5px;
+    margin: 20px 0;
+    .options{
+        .left{
+            float: left;
+            .back{
+                display: inline-block;
+                margin: -2px 20px 0 20px;
+                font-size: 20px;
+            }
+        }
+        .title{
+            position: relative;
+            text-align: center;
+            margin: 0 auto 0 10%;
+        }
+        .right{
+            float: right;
+            .add{
+                display: inline-block;
+                margin: 2px 20px 0 20px;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+.list-examinees-table{
+    margin: 20px;
+    border: 1px solid #ffffff;
+    border-bottom: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    .header{
+        border-bottom: 1px solid #ffffff;
+    }
+    .row{
+        border-bottom: 1px solid #ffffff;
+    }
+    .number {
+        display: inline-block;
+        width: 15%;
+        border-right: 1px solid #ffffff;
+        padding: 2% 0;
+    }
+    .eid{
+        display: inline-block;
+        width: 50%;
+        border-right: 1px solid #ffffff;
+        padding: 2% 0;
+    }
+    .action{
+        display: inline-block;
+        width: 35%;
+        padding: 2% 0;
+        .read, .update, .delete{
+            margin: 0 7px;
+            .fa-eye{
+                margin: 0;
+                padding: 0;
+                font-size: 15px;
+                color: green;
+            }
+            .fa-pencil-square{
+                margin: 0;
+                padding: 0;
+                font-size: 15px;
+                color: yellow;
+            }
+            .fa-trash{
+                margin: 0;
+                padding: 0;
+                font-size: 15px;
+                color: red;
+            }
+        }
+    }
+}

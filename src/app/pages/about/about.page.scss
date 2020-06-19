@@ -1,0 +1,43 @@
+ion-content{
+    --ion-background-color:#3c005a;
+}
+
+.toolbar{
+    display: block;
+    height: 40px;
+    background: #5c008a;
+    color: #ffffff;
+    padding: 10px 5px;
+    margin: 20px 0;
+    .options{
+        .left{
+            float: left;
+            .home{
+                display: inline-block;
+                margin: -2px 20px 0 20px;
+                font-size: 20px;
+            }
+        }
+        .title{
+            position: relative;
+            text-align: center;
+            margin: 0 auto 0 20%;
+        }
+    }
+}
+
+.logo{
+    display: block;
+    width: 40%;
+    margin: 10% auto 5% auto;
+}
+
+.about-content{
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+    .address, .contact, .incharge{
+        margin: 0 auto 10% auto;
+    }
+}

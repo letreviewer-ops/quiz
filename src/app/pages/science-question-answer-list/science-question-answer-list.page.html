@@ -1,0 +1,51 @@
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <div class="toolbar">
+      <div class="options">
+        <span class="left">
+          <span class="back" 
+            routerLink="/select-subject-qa">
+            <i class="fa fa-toggle-left"></i>
+          </span>
+        </span>
+        <span class="title">Science QA Lists</span>
+        <span class="right">
+          <span class="add" 
+            routerLink="/add-question-answer">
+            <i class="fa fa-user-plus"></i>
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <div class="list-questions-table">
+      <div class="header">
+          <span class="number">#</span>
+          <span class="qid">Question ID</span>
+          <span class="action">Action</span>
+      </div>
+      <div class="row" *ngFor="let q of questions">
+        <span class="number">
+          {{q.id}}
+        </span>
+        <span class="qid">
+          {{q.question_id}}
+        </span>
+        <span class="action">
+          <span class="read"
+            (click)="detailsQuestion(q.id)">
+            <i class="fa fa-eye"></i>
+          </span>
+          <span class="update"
+            (click)="updateQuestion(q.id)">
+            <i class="fa fa-pencil-square"></i>
+          </span>
+          <span class="delete"
+            (click)="deleteQuestion(q.id)">
+            <i class="fa fa-trash"></i>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+</ion-content>

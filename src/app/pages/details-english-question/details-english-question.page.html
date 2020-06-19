@@ -1,0 +1,27 @@
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <div class="toolbar">
+      <div class="options">
+        <span class="left">
+          <span class="back" 
+            routerLink="/english-question-answer-list">
+            <i class="fa fa-toggle-left"></i>
+          </span>
+        </span>
+        <span class="title">DETAILS</span>
+      </div>
+    </div>
+
+    <ion-img class="logo" src="../assets/logov2.jpg"></ion-img>
+
+    <div class="instructions-content">
+      <ul>
+        <li>Question : <strong>{{question}}</strong></li>
+        <li>Correct Answer : <strong>{{correct_answer}}</strong></li>
+        <li>Choice 1 : <strong>{{choice1}}</strong></li>
+        <li>Choice 2 : <strong>{{choice2}}</strong></li>
+        <li>Choice 3 : <strong>{{choice3}}</strong></li>
+      </ul>
+  </div>
+  </div>
+</ion-content>

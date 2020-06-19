@@ -1,0 +1,36 @@
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <div class="toolbar">
+      <div class="options">
+        <span class="left">
+          <span class="back" 
+            routerLink="/admin-menu">
+            <i class="fa fa-toggle-left"></i>
+          </span>
+        </span>
+        <span class="title">Examinee Scores & Stats</span>
+      </div>
+    </div>
+
+    <div class="list-examinees-table">
+      <div class="header">
+          <span class="number">#</span>
+          <span class="eid">Examinee ID</span>
+          <span class="date-taken">Date Taken</span>
+      </div>
+      <div class="row" *ngFor="let s of scores">
+        <span class="number">
+          {{s.id}}
+        </span>
+        <span class="eid"
+          (click)="scoreDetails(s.id)"
+        >
+          {{s.examinee_id}}
+        </span>
+        <span class="date-taken">
+          {{s.date_taken}}
+        </span>
+      </div>
+    </div>
+  </div>
+</ion-content>

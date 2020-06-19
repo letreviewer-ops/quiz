@@ -1,0 +1,49 @@
+ion-content{
+    --ion-background-color:#3c005a;
+}
+
+.toolbar{
+    display: block;
+    height: 40px;
+    background: #5c008a;
+    color: #ffffff;
+    padding: 10px 30px;
+    margin: 20px 0;
+    .subject{
+        display: inline-block;
+    }
+    .counter-answered-item{
+        display: inline-block;
+        margin: 0 11%;
+        .fa{
+            margin: 0 5px;
+        }
+    }
+    .timer{
+        display: inline-block;
+    }
+}
+
+.selection{
+    padding: 0 30px 20px 30px;
+    .question{
+        display: block;
+        background: #4f12a0;
+        color: #ffffff;
+        --border-radius: 0px;
+        text-align: center;
+        width: 100%;
+        height: 210px;
+        padding: 10px;
+    }
+    .choices-selection-box{
+        display: block;
+        --background: #330077;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        --border-radius: 0px;
+        width: 100%;
+        height: 40px;
+        margin: 12px 0;
+    }
+}

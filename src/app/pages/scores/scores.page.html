@@ -1,0 +1,38 @@
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <div class="toolbar">
+      <div class="options">
+        <span class="left">
+          <span class="back" 
+            routerLink="/examinee-menu">
+            <i class="fa fa-toggle-left"></i>
+          </span>
+        </span>
+        <span class="title">SCORES</span>
+      </div>
+    </div>
+
+    <div class="list-examinees-table">
+      <div class="header">
+          <span class="number">#</span>
+          <span class="score">Score</span>
+          <span class="subject">Subject</span>
+          <span class="date-taken">Date Taken</span>
+      </div>
+      <div class="row" *ngFor="let s of scores">
+        <span class="number">
+          {{s.id}}
+        </span>
+        <span class="score">
+          {{s.score}}
+        </span>
+        <span class="subject">
+          {{s.subject_taken}}
+        </span>
+        <span class="date-taken">
+          {{s.date_taken}}
+        </span>
+      </div>
+    </div>
+  </div>
+</ion-content>

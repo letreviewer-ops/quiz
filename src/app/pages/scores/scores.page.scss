@@ -1,0 +1,65 @@
+ion-content{
+    --ion-background-color:#3c005a;
+}
+
+.toolbar{
+    display: block;
+    height: 40px;
+    background: #5c008a;
+    color: #ffffff;
+    padding: 10px 5px;
+    margin: 20px 0;
+    .options{
+        .left{
+            float: left;
+            .back{
+                display: inline-block;
+                margin: -2px 20px 0 20px;
+                font-size: 20px;
+            }
+        }
+        .title{
+            position: relative;
+            text-align: center;
+            margin: 0 auto 0 20%;
+        }
+    }
+}
+
+.list-examinees-table{
+    margin: 20px;
+    border: 1px solid #ffffff;
+    border-bottom: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    .header{
+        border-bottom: 1px solid #ffffff;
+    }
+    .row{
+        border-bottom: 1px solid #ffffff;
+    }
+    .number {
+        display: inline-block;
+        width: 15%;
+        border-right: 1px solid #ffffff;
+        padding: 3% 0;
+    }
+    .score{
+        display: inline-block;
+        width: 18%;
+        border-right: 1px solid #ffffff;
+        padding: 3% 0;
+    }
+    .subject{
+        display: inline-block;
+        width: 38%;
+        border-right: 1px solid #ffffff;
+        padding: 3% 0;
+    }
+    .date-taken{
+        display: inline-block;
+        width: 29%;
+        padding: 3% 0;
+    }
+}

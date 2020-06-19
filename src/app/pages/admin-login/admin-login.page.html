@@ -1,0 +1,48 @@
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <div class="toolbar">
+      <div class="options">
+        <span class="left">
+          <div class="home" 
+            routerLink="/home">
+            <i class="fa fa-home"></i>
+          </div>
+        </span>
+        <span class="right">
+          <span class="info" 
+            routerLink="/about">
+            <i class="fa fa-globe"></i>
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <img 
+      class="logo" 
+      src="../assets/logo.jpg" 
+    />
+
+    <ion-input 
+      class="input-box admin-id" 
+      placeholder="Admin ID"
+      type="text"
+      [(ngModel)]="admin_id"
+    ></ion-input>
+
+    <ion-input 
+      class="input-box admin-pin"
+      placeholder="Pin"
+      type="password"
+      [(ngModel)]="admin_pin"
+    ></ion-input>
+
+    <div class="bottom">
+      <ion-button
+        class="let-btn-sm"
+        (click)="adminLogin()"
+        [disabled]="disabledButton"
+        ><i class="fa fa-sign-in"></i>LOGIN
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

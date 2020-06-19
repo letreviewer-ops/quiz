@@ -1,0 +1,53 @@
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <div class="toolbar">
+      <span class="subject">
+        Soc.Stud.
+      </span>
+      <span class="counter-answered-item">
+        <span class="back">
+          <i class="fa fa-toggle-left"></i>
+        </span>
+         1/20
+         <span class="back" 
+          routerLink="/score-result">
+          <i class="fa fa-toggle-right"></i>
+        </span>
+      </span>
+      <span class="timer">
+        00:00
+      </span>
+    </div>
+
+    <div class="selection">
+      <div class="question">
+        sample question
+      </div>
+
+      <ion-button
+        class="choices-selection-box"
+        (click)="choice_A()"
+        >
+          c1
+      </ion-button>
+
+      <ion-button
+        class="choices-selection-box"
+        >
+          c2
+      </ion-button>
+
+      <ion-button
+        class="choices-selection-box"
+        >
+          c3
+      </ion-button>
+
+      <ion-button
+        class="choices-selection-box"
+        >
+          c4
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

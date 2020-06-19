@@ -1,0 +1,45 @@
+ion-content{
+    --ion-background-color:#3c005a;
+}
+
+.toolbar{
+    display: block;
+    height: 40px;
+    background: #5c008a;
+    color: #ffffff;
+    padding: 10px;
+    margin: 20px 0;
+    .options{
+        .left{
+            float: left;
+            .back{
+                display: inline-block;
+                margin: -2px 20px 0 20px;
+                font-size: 20px;
+            }
+        }
+        .title{
+            position: relative;
+            text-align: center;
+            margin: 0 auto 0 20%;
+        }
+    }
+}
+
+.logo{
+    display: block;
+    width: 35%;
+    margin: 15% auto 15% auto;
+}
+
+.instructions-content{
+    ul{
+        padding: 0 40px;
+        li{
+            color: #ffffff;
+            font-size: 15px;
+            margin: 0 0 15px 0;
+            list-style: none;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+ion-content{
+    --ion-background-color:#3c005a;
+}
+
+.toolbar{
+    display: block;
+    height: 40px;
+    background: #5c008a;
+    color: #ffffff;
+    padding: 10px 5px;
+    margin: 20px 0;
+    .options{
+        .left{
+            float: left;
+            .back{
+                display: inline-block;
+                margin: -2px 20px 0 20px;
+                font-size: 20px;
+            }
+        }
+        .title{
+            position: relative;
+            text-align: center;
+            margin: 0 auto 0 10%;
+        }
+        .right{
+            float: right;
+            .add{
+                display: inline-block;
+                margin: 2px 20px 0 20px;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+.logo{
+    display: block;
+    width: 50%;
+    margin: 20% auto 10% auto;
+}
+
+.selection{
+    padding: 30px;
+
+    .fa{
+        float: left;
+        margin: 0 10px 0 0;
+    }
+
+    .let-btn-sm{
+        display: block;
+        --border-radius: 0px;
+        border: 3px solid #ffffff;
+        --background: #2a0161;
+    }
+
+    .start-exam-btn{
+        display: block;
+        text-transform: uppercase;
+        width: 150px;
+        height: 40px;
+        margin: 0 auto 30px auto;
+    }
+}

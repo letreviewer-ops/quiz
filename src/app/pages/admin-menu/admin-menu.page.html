@@ -1,0 +1,44 @@
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <div class="toolbar">
+      <div class="options">
+        <span class="left">
+          <span class="id">
+            <i class="fa fa-user"></i>{{role}}
+          </span>
+        </span>
+        <span class="right">
+          <span class="logout" 
+            (click)="processLogout()">
+            <i class="fa fa-sign-out"></i>Logout
+          </span>
+        </span>
+      </div>
+    </div>
+    <img 
+      class="logo"
+      src="../assets/logo.jpg"
+    />
+    
+    <ion-button
+      class="let-btn-lg"
+      routerLink="/examinee-list">
+        <i class="fa fa-users"></i>
+        EXAMINEE LISTS
+    </ion-button>
+
+    <ion-button
+      class="let-btn-lg"
+      routerLink="/examinee-scores-stats">
+        <i class="fa fa-bar-chart"></i>
+        SCORES &amp; STATS
+    </ion-button>
+
+    <ion-button
+      class="let-btn-lg"
+      routerLink="/select-subject-qa">
+        <i class="fa fa-book"></i>
+        QA LISTS
+    </ion-button>
+  </div>
+</ion-content>

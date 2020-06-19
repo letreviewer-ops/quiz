@@ -1,0 +1,57 @@
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <div class="toolbar">
+      <div class="options">
+        <span class="left">
+          <span class="back" 
+            routerLink="/admin-menu">
+            <i class="fa fa-toggle-left"></i>
+          </span>
+        </span>
+        <span class="title">Select a Subject</span>
+      </div>
+    </div>
+
+    <div class="selection">
+      <ion-button
+        class="let-btn-sm select-subject"
+        routerLink="/english-question-answer-list"
+        [disabled]="disabledButton"
+        >
+          English
+      </ion-button>
+
+      <ion-button
+        class="let-btn-sm select-subject"
+        routerLink="/filipino-question-answer-list"
+        [disabled]="disabledButton"
+        >
+          Filipino
+      </ion-button>
+
+      <ion-button
+        class="let-btn-sm select-subject"
+        routerLink="/math-question-answer-list"
+        [disabled]="disabledButton"
+        >
+          Mathematics
+      </ion-button>
+
+      <ion-button
+        class="let-btn-sm select-subject"
+        routerLink="/science-question-answer-list"
+        [disabled]="disabledButton"
+        >
+          Science
+      </ion-button>
+
+      <ion-button
+        class="let-btn-sm select-subject"
+        routerLink="/social-studies-question-answer-list"
+        [disabled]="disabledButton"
+        >
+          Social Studies
+      </ion-button>
+    </div>
+  </div>
+</ion-content>
